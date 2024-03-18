@@ -1,16 +1,18 @@
 ### Hi there 👋
 
-<!--
-**AymanMujahid/AymanMujahid** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+from earth import Human
 
-Here are some ideas to get you started:
+class ItMe(Human):
+    first_name: str = "Ayman"
+    last_name: str = "Mujahid"
+    work_where: str = "SBS"
+    work_what: str = "backend-engineer"
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    @classmethod
+    def hi(cls):
+        print(f"hey 👋, i'm {cls.first_name.capitalize()}")
+        print(f"currently i work in {cls.work_what} @ {cls.work_where}")
+
+>>> ItMe.hi()
+hey 👋, i'm Ayman Mujahid
+currently i work in backend-engineer @ SBS
