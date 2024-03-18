@@ -12,5 +12,5 @@ class ItMe(Human):
         print(f"currently i work in {cls.work_what} @ {cls.work_where}")
 
 >>> ItMe.hi()
-hey 👋, i'm Joon Hwan
+hey 👋, i'm Ayman Mujahid
 currently i work in backend-engineer @ SBS
