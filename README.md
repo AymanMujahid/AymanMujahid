@@ -1,5 +1,3 @@
-### Hi there 👋
-
 from earth import Human
 
 class ItMe(Human):
@@ -14,5 +12,5 @@ class ItMe(Human):
         print(f"currently i work in {cls.work_what} @ {cls.work_where}")
 
 >>> ItMe.hi()
-hey 👋, i'm Ayman Mujahid
+hey 👋, i'm Joon Hwan
 currently i work in backend-engineer @ SBS
