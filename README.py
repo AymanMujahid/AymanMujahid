@@ -1,16 +1,30 @@
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/aymanmujahid/aymanmujahid/main/banner.gif" alt="Generative AI Banner" width="100%" />
+</p>
+
+# 👋 Hey, I'm Ayman Mujahid  
+
+💻 **Software Engineer – Back-End & Generative AI Focused**  
+🚀 *Passionate about Building with Generative AI & Exploring Intelligent Solutions*  
+🏢 Currently at **SBS**
+
+---
+
+### 🧠 
+```python
 from earth import Human
 
 class ItMe(Human):
-    first_name: str = "Ayman"
-    last_name: str = "Mujahid"
-    work_where: str = "SBS"
-    work_what: str = "backend-engineer"
+    def __init__(self):
+        self.first_name = "Ayman"
+        self.last_name = "Mujahid"
+        self.work_where = "SBS"
+        self.work_what = "Software Engineer – Back-End & Generative AI Focused"
 
-    @classmethod
-    def hi(cls):
-        print(f"hey 👋, i'm {cls.first_name.capitalize()}")
-        print(f"currently i work in {cls.work_what} @ {cls.work_where}")
+    def hi(self):
+        print(f"hey 👋, i'm {self.first_name} {self.last_name}")
+        print(f"currently i work in {self.work_what} @ {self.work_where}")
 
->>> ItMe.hi()
-hey 👋, i'm Ayman Mujahid
-currently i work in backend-engineer @ SBS
+me = ItMe()
+me.hi()
